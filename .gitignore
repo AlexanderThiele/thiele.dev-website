@@ -6,3 +6,20 @@ npm-debug.log
 .gatsby-context.js
 .idea
 gatsby-starter-lumen.iml
+
+## Firebase
+.firebaserc
+.firebase
+
+## firebase client
+/coverage
+/.nyc_output
+firebase-debug.log
+.npmrc
+
+.DS_Store
+*.iml
+*.tgz
+scripts/*.json
+
+lib/
