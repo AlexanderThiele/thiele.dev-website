@@ -29,6 +29,7 @@ module.exports = {
     contacts: {
       twitter: 'athiele_',
       github: 'AlexanderThiele',
+      linkedin: '#',
     }
   }
 };
