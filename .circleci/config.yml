@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   docker:
     - image: circleci/node:10.15.3
-  working_directory: ~/gatsby-starter-lumen
+  working_directory: ~/thiele.dev-website
 
 jobs:
   install:
@@ -62,7 +62,20 @@ jobs:
             - coverage-output-{{ .Environment.CIRCLE_SHA1 }}
       - run: yarn global add codecov
       - run: yarn codecov
-    
+
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: yarn build
+
+  deploy:
+    <<: *defaults
+    branch: master
+    steps:
+      - checkout
+      - run: yarn run deployFirebase -- --token=$FIREBASE_TOKEN --non-interactive
+
 workflows:
   version: 2
   test:
@@ -80,3 +93,15 @@ workflows:
       - codecov:
           requires:
             - coverage
+  build-and-deploy:
+    jobs:
+      - install
+      - build:
+          - requires:
+              - install
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
