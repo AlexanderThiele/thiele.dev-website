@@ -85,7 +85,7 @@ jobs:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
             - public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
-      - run: yarn run deployFirebase --token=$FIREBASE_TOKEN --non-interactive
+      - run: yarn run deployFirebase --token=$FIREBASE_TOKEN --non-interactive --project=thiele-dev
 
 workflows:
   version: 2
