@@ -67,32 +67,28 @@ jobs:
     <<: *defaults
     steps:
       - checkout
-      - run: yarn build
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn run build
+      - save_cache:
+          paths:
+            - public
+          key: public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
 
   deploy:
     <<: *defaults
     branch: master
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "yarn.lock" }}
+            - public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
       - run: yarn run deployFirebase -- --token=$FIREBASE_TOKEN --non-interactive
 
 workflows:
   version: 2
-  test:
-    jobs:
-      - install
-      - lint:
-          requires:
-            - install
-      - test:
-          requires:
-            - install
-      - coverage:
-          requires:
-            - install
-      - codecov:
-          requires:
-            - coverage
   build-and-deploy:
     jobs:
       - install
