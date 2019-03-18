@@ -85,7 +85,7 @@ jobs:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
             - public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
-      - run: yarn run deployFirebase -- --token=$FIREBASE_TOKEN --non-interactive
+      - run: yarn run deployFirebase --token=$FIREBASE_TOKEN --non-interactive
 
 workflows:
   version: 2
@@ -98,6 +98,7 @@ workflows:
       - deploy:
           requires:
             - build
+          context: Firebase
           filters:
             branches:
               only: master
