@@ -63,20 +63,7 @@ jobs:
       - run: yarn global add codecov
       - run: yarn codecov
 
-  build:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - dependencies-{{ checksum "yarn.lock" }}
-      - run: yarn run build
-      - save_cache:
-          paths:
-            - public
-          key: public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
-
-  deploy:
+  build-and-deploy:
     <<: *defaults
     branch: master
     steps:
@@ -84,20 +71,17 @@ jobs:
       - restore_cache:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
-            - public-{{ .Branch }}-{{ .Revision }}-{{ .BuildNum }}
-      - run: yarn run deployFirebase --token=$FIREBASE_TOKEN --non-interactive --project=thiele-dev
+      - run: yarn run build
+      - run: yarn run deployFirebase --token=$FIREBASE_TOKEN --non-interactive --project=$FIREBASE_PROJECT
 
 workflows:
   version: 2
   build-and-deploy:
     jobs:
       - install
-      - build:
+      - build-and-deploy:
           requires:
             - install
-      - deploy:
-          requires:
-            - build
           context: Firebase
           filters:
             branches:

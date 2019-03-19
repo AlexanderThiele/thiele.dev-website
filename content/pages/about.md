@@ -5,4 +5,4 @@ template: "page"
 
 Techi 📱 startup enthusiast & entrepreneur
 
-*More is coming soon*
+*More is coming soon!*
