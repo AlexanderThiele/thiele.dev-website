@@ -1,5 +1,5 @@
 ---
-title: Hello World Gatsby, Firebase!
+title: Hello World Gatsby, Firebase, CircleCI!
 date: "2019-03-15T10:10:10.000Z"
 template: "post"
 draft: false
@@ -8,18 +8,27 @@ category: "General"
 tags:
   - "Gatsby"
   - "Firebase"
-description: "Hello world to test GatsbyJs with Firebase Hosting!"
+  - "CircleCI"
+description: "Hello world to test GatsbyJs with Firebase Hosting & CircleCI!"
 ---
 
 Hello World!
 
-This is a test to try out Gatsby combined with Firebase Hosting.
+First blog post to test Gatsby combined with Firebase Hosting & CircleCI.
+
+ ## GatsbyJs
+Gatsby seems to be super easy to create static pages like this one. I used a themed template from their website and it worked out of the box. It was quite complicated to add LinkedIn to the left sidebar but it worked in the end.
+
+This website/blog is also available [on github](https://github.com/AlexanderThiele/thiele.dev-website)! It's forked from the template and a little bit adjusted.
 
  ## Firebase Hosting
 Hosting seems very easy by just typing firebase deploy. HTTPS is included which makes it hassle free 🥳
 
- ## GatsbyJs
-Gatsby seems to be super easy to create static pages like this one. I used a themed template from their website. It was quite complicated to add LinkedIn to the left sidebar but in the end it worked.
+You can also automate your deployments with CircleCI, Jenkins etc.
 
- ## Github
-Everything is saved on Github 🥰
+ ## CircleCI
+I used CircleCI to automatically generate all static pages and deploy all changes to Firebase Hosting when a new commit appears on master. 
+
+CirlceCI is super powerful and easy to use. I can definitely recommend it for your CI/CD! 
+
+### Thanks!
