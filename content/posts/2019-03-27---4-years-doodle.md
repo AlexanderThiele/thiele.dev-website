@@ -56,11 +56,11 @@ The spirit in Berlin is awesome and i really love to go to work everyday!
 * We did a case study with Google on how SSO solutions could improve the login success rate.
 * Professional Featured Video with the Doodle Team about how we use Firebase in our Apps shown on the Firebase keynote. 
 
-[![Developer Stories on youtube](http://img.youtube.com/vi/uaeXbb5GzEs/0.jpg)](http://www.youtube.com/watch?v=uaeXbb5GzEs)
+[![Developer Stories on youtube](/media/developerstories/ds1.jpg)](http://www.youtube.com/watch?v=uaeXbb5GzEs)
 
 * We got featured on Google IO about how to improve your Apps quality. 
 
-[![Developer Stories 2 on youtube](http://img.youtube.com/vi/RcZn5iD-z9s/0.jpg)](http://www.youtube.com/watch?v=RcZn5iD-z9s)
+[![Developer Stories 2 on youtube](/media/developerstories/ds2.jpg)](http://www.youtube.com/watch?v=RcZn5iD-z9s)
 
 * And a few great app features inside the Google Play Store. Each featuring increased our download numbers by 2x and more. 
 
