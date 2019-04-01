@@ -5,7 +5,7 @@ module.exports = {
   title: 'Blog by Alexander Thiele',
   subtitle: 'Insights about software engineering, technology & my daily work.',
   copyright: '©AlexanderThiele All rights reserved.',
-  disqusShortname: 'deralext',
+  disqusShortname: 'thiele-dev',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-43484753-3',
   menu: [

@@ -15,7 +15,7 @@ I’m excited to announce that I’ll be taking on the Chief Technology Officer 
 
 I'm joining the team in Berlin, Germany. In my role, i will create a complete new engineering team in Berlin with focus on the prosperity platform including the apps, websites and backend-services to create the best user experience for our users.
 
-[Prosperity Logo](/media/prosperity/prosperity_logo.png)
+![Prosperity Logo](/media/prosperity/prosperity_logo.png)
 
 ## Why Prosperity?
 Planning for retirement is always difficult! Especially if you want to make the decision only once in your life. You will maybe meet an insurance agent who advices you a contract but is this the right way to do it? Does he just sell you something because he wants to make the most profit or does he sell it because it‘s the best product on the market? I don‘t have the answer but i hope everyone is choosing for the best product on the market. 
