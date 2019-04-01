@@ -22,5 +22,7 @@ Planning for retirement is always difficult! Especially if you want to make the 
 
 **I really believe** that the market needs to improve! We can do better and that‘s the reason why i believe in the product and the team of prosperity! We‘re still small but we will grow in the near future and create a product around the user and not the profit.
 
+Berlin is a great city! Drop me a line on [twitter @athiele_](https://twitter.com/athiele_), [linkedin](https://www.linkedin.com/in/athiele/) or wherever you find me if you're curious! 
+
 Cheers!
 
