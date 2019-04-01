@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://thiele.dev',
   title: 'Blog by Alexander Thiele',
-  subtitle: 'Insights about software engineering, technology & my dayly work.',
+  subtitle: 'Insights about software engineering, technology & my daily work.',
   copyright: '©AlexanderThiele All rights reserved.',
   disqusShortname: 'deralext',
   postsPerPage: 4,
